@@ -1,0 +1,24 @@
+﻿@model CroweCodingTest.Web.Models.Message
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <table border="0">
+        <tr>
+            <th>
+                From Web API:
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h2>@Html.DisplayFor(model => model.message)</h2>
+            </th>
+        </tr>
+    </table>
+</div>
+<div>
+    Run Console Application:
+    @Html.ActionLink("Run Console", "Console", "Home")
+</div>
+
