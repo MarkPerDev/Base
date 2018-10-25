@@ -14,7 +14,7 @@ namespace UnitTest.CroweCodingTest
     [TestMethod]
     public void API_Get_NoIdParam_Test()
     {
-      var controller = new List();
+      var controller = new MessagingController();
       var response = controller.Get();
       Assert.IsTrue(response != null && response.Contains(MessageConstants.HELLO_WORLD_MSG_ENG));
     }
@@ -22,7 +22,7 @@ namespace UnitTest.CroweCodingTest
     [TestMethod]
     public void API_Get_IdParam_English_Test()
     {
-      var controller = new List();
+      var controller = new MessagingController();
       var response = controller.Get(1);
       Assert.IsTrue(response != null && response.Contains(MessageConstants.HELLO_WORLD_MSG_ENG));
     }
@@ -30,7 +30,7 @@ namespace UnitTest.CroweCodingTest
     [TestMethod]
     public void API_Get_IdParam_Spanish_Test()
     {
-      var controller = new List();
+      var controller = new MessagingController();
       var response = controller.Get(2);
       Assert.IsTrue(response != null && response.Contains(MessageConstants.HELLO_WORLD_MSG_SPANISH));
     }
@@ -38,7 +38,7 @@ namespace UnitTest.CroweCodingTest
     [TestMethod]
     public void API_Get_IdParam_French_Test()
     {
-      var controller = new List();
+      var controller = new MessagingController();
       var response = controller.Get(3);
       Assert.IsTrue(response != null && response.Contains(MessageConstants.HELLO_WORLD_MSG_FRENCH));
     }
@@ -46,7 +46,7 @@ namespace UnitTest.CroweCodingTest
     [TestMethod]
     public void API_Get_IdParam_NotFound_Test()
     {
-      var controller = new List();
+      var controller = new MessagingController();
       var response = controller.Get(0);
       Assert.IsTrue(response != null && response.Contains(MessageConstants.NOT_FOUND_MSG));
     }
