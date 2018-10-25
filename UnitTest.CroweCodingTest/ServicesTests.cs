@@ -15,8 +15,8 @@ namespace UnitTest.CroweCodingTest
     {
       ICorpMessaging messaging = new CorpMessaging();
 
-      var messageRetrieved = messaging.GetMessage(MessageConstants.HELLO_WORLD);
-      Assert.AreEqual(MessageConstants.HELLO_WORLD, messageRetrieved, 
+      var messageRetrieved = messaging.GetMessage(MessageConstants.HELLO_WORLD_MSG_ENG);
+      Assert.AreEqual(MessageConstants.HELLO_WORLD_MSG_ENG, messageRetrieved, 
         @"Expected messages to be equal"
       );
     }

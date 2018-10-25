@@ -1,13 +1,17 @@
-﻿using CroweCodingTest.Services;
+﻿using System.Web.Http;
+using System.Linq;
 using CroweCodingTest.Services.Interface;
-using System.Web.Http;
+using CroweCodingTest.API.Models;
+using CroweCodingTest.Services;
 
 namespace CroweCodingTest.API.Controllers
 {
-  public class MessagingController : ApiController
+  public class List : ApiController
   {
     private const string HELLO_WORLD = @"Hello World";
 		ICorpMessaging _messaging;
+
+    private readonly MessageEntities context = new MessageEntities();
 
     // GET api/messaging
     public string Get()
@@ -16,10 +20,12 @@ namespace CroweCodingTest.API.Controllers
 			return _messaging.GetMessage(HELLO_WORLD);
     }
 
-    // GET api/messaging/5
+    // GET api/messaging/1
     public string Get(int id)
     {
-      return "value";
+      var msg = context.displays.SingleOrDefault(x => x.Id == id);
+
+      return (msg != null) ? msg.Message : "Not Found";
     }
 
     // POST api/messages
