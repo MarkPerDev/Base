@@ -1,3 +1,5 @@
+Code created using Visual Studio 2017 Pro.
+
 There are two solution files:
 CroweCodingTest.Web.sln
 CroweCodingTest.API.sln
