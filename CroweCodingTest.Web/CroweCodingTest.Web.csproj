@@ -228,10 +228,6 @@
       <Project>{dacc4a4a-e91e-4619-b382-0695953bf20b}</Project>
       <Name>CroweCodingTest.API</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CroweCodingTest.Data\CroweCodingTest.Data.csproj">
-      <Project>{a092e0bc-d0ce-41e3-9b89-f9c8e0478b22}</Project>
-      <Name>CroweCodingTest.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CroweCodingTest.Services\CroweCodingTest.Services.csproj">
       <Project>{ddc57b34-1aaa-41d2-beb2-8c36993acd43}</Project>
       <Name>CroweCodingTest.Services</Name>

@@ -52,10 +52,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CroweCodingTest.Data\CroweCodingTest.Data.csproj">
-      <Project>{9708ef64-4ea5-4198-a5ac-b93af86d8453}</Project>
-      <Name>CroweCodingTest.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CroweCodingTest.API\CroweCodingTest.API.csproj">
       <Project>{dacc4a4a-e91e-4619-b382-0695953bf20b}</Project>
       <Name>CroweCodingTest.API</Name>
