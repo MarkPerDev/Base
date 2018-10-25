@@ -1,6 +1,6 @@
 There are two solution files:
-CroweCodingTest.Web
-CroweCodingTest.API
+CroweCodingTest.Web.sln
+CroweCodingTest.API.sln
 
 To run the unit tests, use the CroweCodingTest.API solution. 
 To run the web, api and console apps use the CroweCodingTest.Web solution.
