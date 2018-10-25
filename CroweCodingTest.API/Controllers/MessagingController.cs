@@ -6,7 +6,7 @@ using CroweCodingTest.Services;
 
 namespace CroweCodingTest.API.Controllers
 {
-  public class List : ApiController
+  public class MessagingController : ApiController
   {
     private const string HELLO_WORLD = @"Hello World";
 		ICorpMessaging _messaging;
